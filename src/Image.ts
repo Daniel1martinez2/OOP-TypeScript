@@ -7,11 +7,12 @@ export class Image extends File implements VisualFile {
   constructor(
     size:number,
     name:string, 
+    length:number, 
     width:number,
     height:number,
     resolution:number
   ){
-    super(size,name);
+    super(size,name,length);
     this.width = width;
     this.height = height;
     this.resolution = resolution;
